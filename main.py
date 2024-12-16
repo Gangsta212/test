@@ -2,8 +2,8 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
-    return redirect("https://tringcoin.com/", code=302)
-
+def redirect_to_link():
+    # return redirect method, NOTE: replace google.com with the link u want
+    return redirect('https://tringcoin.com/')
 if __name__ == '__main__':
     app.run()
